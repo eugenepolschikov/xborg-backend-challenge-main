@@ -59,7 +59,9 @@ describe('UserService', () => {
       const error = new Error('Database error');
       mockUserRepository.create.rejects(error);
 
-      await expect(userService.signup(mockSignupRequest)).rejects.toThrow(error);
+      await expect(userService.signup(mockSignupRequest)).rejects.toThrow(
+        error,
+      );
       // expect(loggerSpy).toHaveBeenCalledWith(
       //   `Registering new user with address: ${mockSignupRequest.address}`,
       // );

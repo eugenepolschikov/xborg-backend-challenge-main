@@ -7,7 +7,6 @@ import { UserService } from '../user.service';
 import { UserController } from '../user.controller';
 import { mockSignupRequest, mockUser } from './mocks';
 
-
 describe('UserController', () => {
   let userController: UserController;
   let loggerSpy: jest.SpyInstance;
