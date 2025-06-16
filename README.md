@@ -71,3 +71,34 @@ $ yarn format
 ```
 
 ## Submission Documentation...
+Created the unit tests for both the UserController and the UserService. 
+
+Added:
+For `UserService`:
+1. Enhanced the existing signup test with more assertions
+2. Added test for error handling when repository create fails
+3. Added test for handling missing optional fields
+4. Added logging verification
+5. Added proper cleanup in afterEach
+
+For `UserController`
+1. Created new test file with complete test coverage
+2. Added tests for getUser by both id and address
+3. Added error handling tests
+4. Added tests for signup functionality
+5. Added logging verification
+6. Added proper cleanup in afterEach
+
+Tests cover:
+* Happy paths (successful operations)
+* Error scenarios
+* Edge cases (missing optional fields)
+* Logging verification
+* Proper dependency injection
+* Proper mocking of dependencies
+  
+To run these tests,
+> yarn test
+
+The tests use:
+* Jest as the testing framework
